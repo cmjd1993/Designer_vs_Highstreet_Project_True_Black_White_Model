@@ -112,7 +112,7 @@ def main():
                     # get the score as a %
                     scoreAsAPercent = confidence * 100.0
                     # show the result to std out
-                    print("the object appears to be a " + strClassification + ", " + "{0:.2f}".format(scoreAsAPercent) + "% confidence")
+                    print("the object appears to be a " + strClassification + " shoe, with " + "{0:.2f}".format(scoreAsAPercent) + "% confidence")
                     # write the result on the image
                     writeResultOnImage(openCVImage, strClassification + ", " + "{0:.2f}".format(scoreAsAPercent) + "% confidence")
                     # finally we can show the OpenCV image
